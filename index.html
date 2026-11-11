@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PrimerPaso | Tu primer trabajo empieza aquí</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                <div class="logo-icon">↗</div>
+
+                <div class="logo-text">
+                    <span>Primer<span>Paso</span></span>
+                    <small>Tu primer paso hacia tu futuro profesional.</small>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="empleos.html">Empleos</a>
+    <a href="#herramientas">Herramientas</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#" data-coming-soon="Blog">Blog</a>
+</nav>
+
+<div class="nav-buttons">
+    <a
+        href="auth.html?mode=login"
+        class="btn btn-outline"
+        data-auth-login
+    >
+        Iniciar sesión
+    </a>
+
+    <a
+        href="auth.html?mode=register"
+        class="btn btn-primary"
+        data-auth-register
+    >
+        Registrarse
+    </a>
+</div>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <div class="hero-badge">
+                        🚀 Empieza hoy
+                    </div>
+
+                    <h1>
+                        Encuentra tu
+                        <span>primer trabajo.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Sin experiencia, pero con muchas ganas de crecer.
+                        Aquí empieza tu futuro.
+                    </p>
+
+                    <!-- SEARCH -->
+                    <form class="search-box" id="homeSearchForm" action="empleos.html" method="get">
+
+                        <div class="search-field">
+                            <span class="search-icon">⌕</span>
+                            <input
+                                type="search" name="keyword" id="homeKeyword"
+                                placeholder="¿Qué trabajo buscas?"
+                            >
+                        </div>
+
+                        <div class="search-divider"></div>
+
+                        <div class="search-field">
+                            <span class="location-icon">⌖</span>
+                            <input
+                                type="search" name="location" id="homeLocation"
+                                placeholder="¿Dónde?"
+                            >
+                        </div>
+
+                        <button class="search-button" type="submit">
+                            Buscar empleos
+                        </button>
+
+                    </form>
+
+                    <!-- HERO FEATURES -->
+                    <div class="hero-features">
+
+                        <div class="hero-feature">
+                            <span>💼</span>
+                            <p>Sin experiencia<br>también puedes empezar</p>
+                        </div>
+
+                        <div class="hero-feature">
+                            <span>◷</span>
+                            <p>Horarios flexibles<br>y medio tiempo</p>
+                        </div>
+
+                        <div class="hero-feature">
+                            <span>⌖</span>
+                            <p>Trabajos cerca<br>de ti</p>
+                        </div>
+
+                        <div class="hero-feature">
+                            <span>★</span>
+                            <p>Empresas confiables<br>y verificadas</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO ILLUSTRATION -->
+                <div class="hero-image">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="person-card">
+
+                        <div class="person-head"></div>
+
+                        <div class="person-body">
+
+                            <div class="person-arm left"></div>
+                            <div class="person-arm right"></div>
+
+                            <div class="backpack"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-note">
+                        Grandes metas
+                        <br>
+                        comienzan con
+                        <br>
+                        un primer paso.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             TOOLS
+        ========================== -->
+        <section class="tools-section" id="herramientas">
+
+            <div class="container tools-content">
+
+                <div class="tools-intro">
+
+                    <h2>
+                        ¿No sabes por
+                        <br>
+                        dónde empezar?
+                    </h2>
+
+                    <p>
+                        Te ayudamos con las herramientas que necesitas
+                        para prepararte y lograr tu primer empleo.
+                    </p>
+
+                    <a href="cv.html" class="btn btn-primary">
+                        Ver todas las herramientas →
+                    </a>
+
+                </div>
+
+
+                <div class="tools-grid">
+
+                    <article class="tool-card purple" onclick="location.href='cv.html'" style="cursor:pointer">
+
+                        <div class="tool-icon">📄</div>
+
+                        <h3>Crear mi CV</h3>
+
+                        <p>
+                            Haz un CV profesional
+                            en minutos.
+                        </p>
+
+                        <a href="cv.html" aria-label="Abrir herramienta">→</a>
+
+                    </article>
+
+
+                    <article class="tool-card green" onclick="location.href='entrevista.html'" style="cursor:pointer">
+
+                        <div class="tool-icon">👥</div>
+
+                        <h3>Prepararme para entrevista</h3>
+
+                        <p>
+                            Practica y recibe
+                            consejos.
+                        </p>
+
+                        <a href="#">→</a>
+
+                    </article>
+
+
+                    <article class="tool-card orange" onclick="location.href='perfil.html'" style="cursor:pointer">
+
+                        <div class="tool-icon">🎯</div>
+
+                        <h3>Descubrir mi perfil laboral</h3>
+
+                        <p>
+                            Conoce qué trabajos
+                            se ajustan a ti.
+                        </p>
+
+                        <a href="#">→</a>
+
+                    </article>
+
+
+                    <article class="tool-card blue" id="recursos" onclick="location.href='recursos.html'" style="cursor:pointer">
+
+                        <div class="tool-icon">📚</div>
+
+                        <h3>Recursos y consejos</h3>
+
+                        <p>
+                            Aprende, mejora
+                            y avanza.
+                        </p>
+
+                        <a href="#">→</a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             JOBS
+        ========================== -->
+        <section class="jobs-section" id="empleos">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Empleos destacados</h2>
+
+                        <p>
+                            Oportunidades reales para empezar tu camino.
+                        </p>
+                    </div>
+
+                    <a href="empleos.html" class="view-all">
+                        Ver todos los empleos →
+                    </a>
+
+                </div>
+
+
+                <div class="jobs-grid">
+
+                    <!-- JOB 1 -->
+                    <article class="job-card">
+
+                        <div class="job-icon purple-icon">
+                            🛍️
+                        </div>
+
+                        <h3>Asistente de ventas</h3>
+
+                        <p class="company">
+                            Tiendas Express
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag green-tag">
+                                Sin experiencia
+                            </span>
+
+                            <span class="tag">
+                                Tiempo completo
+                            </span>
+                        </div>
+
+                        <div class="job-info">
+                            <span>⌖ San Salvador</span>
+                        </div>
+
+                        <strong class="salary">
+                            $400 – $500
+                        </strong>
+
+                        <button class="apply-button">
+                            Aplicar
+                        </button>
+
+                    </article>
+
+
+                    <!-- JOB 2 -->
+                    <article class="job-card">
+
+                        <div class="job-icon blue-icon">
+                            🎧
+                        </div>
+
+                        <h3>Servicio al cliente</h3>
+
+                        <p class="company">
+                            Call Center Plus
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag green-tag">
+                                Sin experiencia
+                            </span>
+
+                            <span class="tag">
+                                Medio tiempo
+                            </span>
+                        </div>
+
+                        <div class="job-info">
+                            <span>⌖ Santa Tecla</span>
+                        </div>
+
+                        <strong class="salary">
+                            $350 – $450
+                        </strong>
+
+                        <button class="apply-button">
+                            Aplicar
+                        </button>
+
+                    </article>
+
+
+                    <!-- JOB 3 -->
+                    <article class="job-card">
+
+                        <div class="job-icon green-icon">
+                            💻
+                        </div>
+
+                        <h3>Auxiliar de informática</h3>
+
+                        <p class="company">
+                            TecnoSoluciones
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag green-tag">
+                                Sin experiencia
+                            </span>
+
+                            <span class="tag">
+                                Tiempo completo
+                            </span>
+                        </div>
+
+                        <div class="job-info">
+                            <span>⌖ San Salvador</span>
+                        </div>
+
+                        <strong class="salary">
+                            $450 – $550
+                        </strong>
+
+                        <button class="apply-button">
+                            Aplicar
+                        </button>
+
+                    </article>
+
+
+                    <!-- JOB 4 -->
+                    <article class="job-card">
+
+                        <div class="job-icon orange-icon">
+                            🍴
+                        </div>
+
+                        <h3>Auxiliar de cocina</h3>
+
+                        <p class="company">
+                            Restaurante El Buen Sabor
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag green-tag">
+                                Sin experiencia
+                            </span>
+
+                            <span class="tag">
+                                Medio tiempo
+                            </span>
+                        </div>
+
+                        <div class="job-info">
+                            <span>⌖ La Libertad</span>
+                        </div>
+
+                        <strong class="salary">
+                            $300 – $400
+                        </strong>
+
+                        <button class="apply-button">
+                            Aplicar
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div class="stairs">
+                        <div class="step step-1"></div>
+                        <div class="step step-2"></div>
+                        <div class="step step-3"></div>
+                        <div class="step step-4"></div>
+
+                        <div class="flag">⚑</div>
+                    </div>
+
+                    <div class="cta-text">
+
+                        <h2>
+                            Tu futuro profesional
+                            <br>
+                            está más cerca de lo que piensas.
+                        </h2>
+
+                        <p>
+                            No necesitas tener todo resuelto,
+                            solo dar el primer paso.
+                        </p>
+
+                        <a href="auth.html?mode=register" class="btn btn-primary">
+                            Regístrate ahora →
+                        </a>
+
+                    </div>
+
+                    <div class="cta-message">
+                        Aprende
+                        <br>
+                        Aplica
+                        <br>
+                        Crece
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+
+                    <div class="logo-icon">↗</div>
+
+                    <div class="logo-text">
+                        <span>Primer<span>Paso</span></span>
+
+                        <small>
+                            Tu primer paso hacia tu futuro profesional.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#">Inicio</a>
+                    <a href="#">Empleos</a>
+                    <a href="#">Herramientas</a>
+                    <a href="#">Recursos</a>
+                    <a href="#">Blog</a>
+
+                </div>
+
+
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">◎</a>
+                    <a href="#">♪</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 PrimerPaso. Todos los derechos reservados.
+                </p>
+
+                <div>
+                    <a href="#">Términos y condiciones</a>
+                    <span>|</span>
+                    <a href="#">Política de privacidad</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+<script src="app.js"></script></body>
+</html>

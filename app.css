@@ -1,0 +1,18 @@
+
+.app-shell{min-height:75vh;background:#f5faff;padding:55px 16px;display:flex;justify-content:center;align-items:flex-start}
+.app-panel{width:min(850px,100%);background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:34px;box-shadow:0 12px 35px rgba(20,50,80,.06)}
+.auth-panel{max-width:510px}.eyebrow{color:#1473e6;font-size:12px;font-weight:800;letter-spacing:1px}
+.app-panel h1{font-size:32px;color:#102a4c;margin:8px 0}.app-panel>p{color:#63728a;margin-bottom:20px}
+.field{display:grid;gap:7px;margin:16px 0}.field label{font-size:13px;font-weight:700;color:#223957}
+.field input,.field textarea,.field select{width:100%;border:1px solid #dce4ed;border-radius:10px;padding:12px;font:inherit;color:#102a4c;background:#fff}
+.field textarea{min-height:100px;resize:vertical}.full{width:100%;border:0;cursor:pointer;margin-top:10px}
+.notice{padding:12px 14px;border-radius:10px;background:#fff7e8;color:#79551b;font-size:12px;margin:18px 0}
+.form-message{min-height:22px;color:#1473e6;font-size:13px;margin-top:12px}
+.switch-auth{text-align:center;margin-top:20px;color:#63728a;font-size:13px}.text-button{border:0;background:none;color:#1473e6;font:inherit;font-weight:700;cursor:pointer}
+.app-nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.app-nav a{padding:9px 13px;border:1px solid #dce4ed;border-radius:10px;color:#1473e6;font-size:13px;font-weight:700}
+.progress{height:8px;background:#e9f0f8;border-radius:20px;overflow:hidden;margin:18px 0 25px}.progress span{display:block;height:100%;background:#1473e6;transition:width .2s}
+.step-indicator{font-size:12px;color:#63728a;font-weight:700}.cv-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.cv-actions button{cursor:pointer}
+.cv-preview{border:1px solid #dce4ed;border-radius:12px;padding:25px;margin-top:22px;color:#263b55}.cv-preview h2{color:#1473e6;border-bottom:2px solid #1473e6;padding-bottom:8px}.cv-preview h3{margin:18px 0 5px}.cv-preview p{white-space:pre-wrap}
+.question-card{padding:17px;border:1px solid #e2e8f0;border-radius:12px;margin:13px 0}.question-card h3{font-size:16px;color:#102a4c}.answer{background:#f3f8ff;border-left:3px solid #1473e6;padding:12px;margin-top:10px;font-size:13px;color:#53657c}
+.job-contact{background:#f3f8ff;border-radius:10px;padding:13px;font-size:13px;color:#53657c;margin-top:12px}
+@media(max-width:650px){.app-panel{padding:22px}.app-panel h1{font-size:26px}.app-shell{padding:28px 12px}}

@@ -1,0 +1,354 @@
+<!-- empleos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorar empleos | PrimerPaso</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="empleos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo" aria-label="PrimerPaso, ir al inicio">
+                <div class="logo-icon">↗</div>
+
+                <div class="logo-text">
+                    <span>Primer<span>Paso</span></span>
+                    <small>Tu primer paso hacia tu futuro profesional.</small>
+                </div>
+            </a>
+
+           <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="empleos.html" class="active" aria-current="page">
+        Empleos
+    </a>
+    <a href="index.html#herramientas">Herramientas</a>
+    <a href="index.html#recursos">Recursos</a>
+    <a href="#" data-coming-soon="Blog">Blog</a>
+</nav>
+
+<div class="nav-buttons">
+    <a
+        href="auth.html?mode=login"
+        class="btn btn-outline"
+        data-auth-login
+    >
+        Iniciar sesión
+    </a>
+
+    <a
+        href="auth.html?mode=register"
+        class="btn btn-primary"
+        data-auth-register
+    >
+        Registrarse
+    </a>
+</div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="jobs-hero">
+            <div class="container jobs-hero-content">
+                <div class="jobs-hero-copy">
+                    <span class="jobs-eyebrow">💼 Oportunidades para empezar</span>
+
+                    <h1>Encuentra tu <span>primera oportunidad</span></h1>
+
+                    <p>
+                        Explora empleos pensados para jóvenes que quieren dar su primer paso en el mundo laboral.
+                    </p>
+                </div>
+
+                <form class="jobs-search" id="jobsSearchForm">
+                    <div class="jobs-search-field">
+                        <span aria-hidden="true">⌕</span>
+                        <label class="sr-only" for="keywordInput">Puesto o palabra clave</label>
+                        <input
+                            id="keywordInput"
+                            name="keyword"
+                            type="search"
+                            placeholder="Puesto o palabra clave"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="jobs-search-divider"></div>
+
+                    <div class="jobs-search-field">
+                        <span aria-hidden="true">⌖</span>
+                        <label class="sr-only" for="locationInput">Ubicación</label>
+                        <input
+                            id="locationInput"
+                            name="location"
+                            type="search"
+                            placeholder="Ubicación"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <button class="search-button jobs-search-button" type="submit">
+                        Buscar empleos
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="jobs-explorer" aria-label="Explorador de empleos">
+            <div class="container explorer-layout">
+
+                <aside class="filters-card">
+                    <div class="filters-heading">
+                        <div>
+                            <span class="filters-kicker">Personaliza tu búsqueda</span>
+                            <h2>Filtrar empleos</h2>
+                        </div>
+                        <span class="filters-icon">⚙</span>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Ubicación</h3>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="location" value="San Salvador">
+                            <span>San Salvador</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="location" value="Soyapango">
+                            <span>Soyapango</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="location" value="Ilopango">
+                            <span>Ilopango</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="location" value="Santa Tecla">
+                            <span>Santa Tecla</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="location" value="Antiguo Cuscatlán">
+                            <span>Antiguo Cuscatlán</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Modalidad</h3>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="modality" value="Presencial">
+                            <span>Presencial</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="modality" value="Remoto">
+                            <span>Remoto</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="modality" value="Híbrido">
+                            <span>Híbrido</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Horario</h3>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="schedule" value="Tiempo completo">
+                            <span>Tiempo completo</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="schedule" value="Medio tiempo">
+                            <span>Medio tiempo</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="schedule" value="Fines de semana">
+                            <span>Fines de semana</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Experiencia</h3>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="experience" value="Sin experiencia">
+                            <span>Sin experiencia</span>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="experience" value="Experiencia opcional">
+                            <span>Experiencia opcional</span>
+                        </label>
+                    </div>
+
+                    <button class="clear-filters" id="clearFilters" type="button">
+                        Limpiar filtros
+                    </button>
+                </aside>
+
+                <section class="results-area" aria-live="polite">
+                    <div class="results-toolbar">
+                        <div>
+                            <span class="results-kicker">Oportunidades para vos</span>
+                            <h2 id="resultsCount">12 oportunidades encontradas</h2>
+                        </div>
+
+                        <label class="sort-control" for="sortSelect">
+                            <span>Ordenar por:</span>
+
+                            <select id="sortSelect">
+                                <option value="recent">Más recientes</option>
+                                <option value="oldest">Más antiguas</option>
+                                <option value="salary-high">Mayor salario</option>
+                                <option value="salary-low">Menor salario</option>
+                                <option value="title">Puesto: A-Z</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="notice" style="margin:14px 0">Aviso: las vacantes visibles son ejemplos de demostración, todavía no son ofertas verificadas ni incluyen contactos reales de empresas. Antes de publicar el sitio, reemplázalas por vacantes y medios de contacto confirmados.</div>
+                    <div class="active-filters" id="activeFilters"></div>
+
+                    <div class="jobs-list" id="jobsList"></div>
+
+                    <div class="empty-state" id="emptyState" hidden>
+                        <div class="empty-state-icon">⌕</div>
+
+                        <h3>No encontramos empleos con esos criterios</h3>
+
+                        <p>
+                            Prueba con otra palabra clave o elimina alguno de los filtros.
+                        </p>
+
+                        <button
+                            class="btn btn-primary"
+                            id="emptyClearFilters"
+                            type="button"
+                        >
+                            Ver todos los empleos
+                        </button>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="job-modal" id="jobModal" hidden>
+        <div class="job-modal-backdrop" data-close-modal></div>
+
+        <article
+            class="job-modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalJobTitle"
+        >
+            <button
+                class="modal-close"
+                type="button"
+                aria-label="Cerrar"
+                data-close-modal
+            >
+                ×
+            </button>
+
+            <div class="modal-job-icon" id="modalJobIcon">💼</div>
+
+            <span class="modal-company" id="modalCompany">Empresa</span>
+
+            <h2 id="modalJobTitle">Puesto</h2>
+
+            <p class="modal-description" id="modalDescription"></p>
+
+            <div class="modal-details" id="modalDetails"></div>
+
+            <div class="modal-tags" id="modalTags"></div>
+
+            <div class="modal-salary" id="modalSalary"></div>
+
+            <div class="modal-actions">
+                <button
+                    class="btn btn-outline modal-save"
+                    id="modalSaveButton"
+                    type="button"
+                >
+                    ♡ Guardar oferta
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    id="modalApplyButton"
+                    type="button"
+                >
+                    Aplicar →
+                </button>
+            </div>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <a href="index.html" class="footer-brand">
+                    <div class="logo-icon">↗</div>
+
+                    <div class="logo-text">
+                        <span>Primer<span>Paso</span></span>
+                        <small>Tu primer paso hacia tu futuro profesional.</small>
+                    </div>
+                </a>
+
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="empleos.html">Empleos</a>
+                    <a href="index.html#herramientas">Herramientas</a>
+                    <a href="index.html#recursos">Recursos</a>
+                    <a href="index.html#blog">Blog</a>
+                </div>
+
+                <div class="social-links" aria-label="Redes sociales">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="TikTok">♪</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 PrimerPaso. Todos los derechos reservados.</p>
+
+                <div>
+                    <a href="#">Términos y condiciones</a>
+                    <span>|</span>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="app.js"></script><script src="empleos.js"></script>
+<script src="app.js"></script></body>
+</html>

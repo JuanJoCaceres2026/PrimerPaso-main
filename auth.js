@@ -1,0 +1,9 @@
+
+let mode=new URLSearchParams(location.search).get('mode')==='login'?'login':'register';
+const form=document.getElementById('authForm'), title=document.getElementById('authTitle'), intro=document.getElementById('authIntro'), nameField=document.getElementById('nameField'), submit=document.getElementById('authSubmit'), switchText=document.getElementById('switchText'), switchMode=document.getElementById('switchMode'), message=document.getElementById('authMessage'), password=document.getElementById('password');
+function paint(){const login=mode==='login';title.textContent=login?'Inicia sesión':'Crea tu cuenta';intro.textContent=login?'Accede a tu espacio de PrimerPaso.':'Regístrate para guardar tu CV y tus oportunidades favoritas.';nameField.hidden=login;document.getElementById('fullName').required=!login;password.autocomplete=login?'current-password':'new-password';submit.textContent=login?'Iniciar sesión':'Crear cuenta';switchText.textContent=login?'¿Aún no tienes cuenta?':'¿Ya tienes una cuenta?';switchMode.textContent=login?'Regístrate':'Inicia sesión';message.textContent=''}
+switchMode.addEventListener('click',()=>{mode=mode==='login'?'register':'login';paint()});
+form.addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('email').value.trim().toLowerCase(),pass=password.value;let users={};try{users=JSON.parse(localStorage.getItem('pp_users')||'{}')}catch{}
+ if(mode==='register'){if(users[email]){message.textContent='Ya existe una cuenta con ese correo.';return}const user={name:document.getElementById('fullName').value.trim(),email};users[email]={...user,password:pass};localStorage.setItem('pp_users',JSON.stringify(users));PP.setUser(user);location.href='perfil.html'}
+ else{if(!users[email]||users[email].password!==pass){message.textContent='Correo o contraseña incorrectos.';return}PP.setUser({name:users[email].name,email});location.href='perfil.html'}
+});paint();
